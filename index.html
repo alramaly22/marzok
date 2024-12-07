@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فورم بيانات العميل</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>فورم بيانات العميل</h1>
+        <form id="clientForm">
+            <div class="form-group">
+                <label for="name">اسم العميل:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">عمر العميل:</label>
+                <input type="number" id="age" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">رقم هاتف العميل:</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="height">طول العميل (سم):</label>
+                <input type="number" id="height" required>
+            </div>
+            <div class="form-group">
+                <label for="weight">وزن العميل (كجم):</label>
+                <input type="number" id="weight" required>
+            </div>
+            <div class="form-group">
+                <label for="activity">النشاط الممارس:</label>
+                <textarea id="activity" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="workNature">طبيعة العمل:</label>
+                <textarea id="workNature" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="goal">الهدف من التدريب:</label>
+                <textarea id="goal" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="availability">الأيام الممكنة للتدريب + الوقت:</label>
+                <textarea id="availability" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="injuries">إصابات - عمليات:</label>
+                <textarea id="injuries"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="budget">الميزانية الخاصة للتدريب:</label>
+                <input type="number" id="budget" required>
+            </div>
+            <div class="form-group">
+                <label for="socialStatus">الحالة الاجتماعية:</label>
+                <select id="socialStatus" required>
+                    <option value="متزوج">متزوج</option>
+                    <option value="أعزب">أعزب</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="goalTime">الوقت المحدد للهدف:</label>
+                <input type="text" id="goalTime" required>
+            </div>
+            <div class="form-group">
+                <label for="obstacles">العقبات للوصول للهدف:</label>
+                <textarea id="obstacles" required></textarea>
+            </div>
+            <h2>قياس مستوى العميل:</h2>
+            <div class="form-group">
+                <label>تمارين الحركة بوزن الجسم:</label>
+                <div class="sub-group">
+                    <label for="pushups">١- الضغط (العدات):</label>
+                    <input type="number" id="pushups" required>
+                </div>
+                <div class="sub-group">
+                    <label for="pullups">٢- العقلة (العدات):</label>
+                    <input type="number" id="pullups" required>
+                </div>
+                <div class="sub-group">
+                    <label for="abs">٣- البطن (العدات):</label>
+                    <input type="number" id="abs" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>تمارين الثبات بوزن الجسم:</label>
+                <div class="sub-group">
+                    <label for="plank">١- البلانك (الدقائق):</label>
+                    <input type="number" id="plank" required>
+                </div>
+                <div class="sub-group">
+                    <label for="staticPushup">٢- الثبات في وضعية الضغط (الدقائق):</label>
+                    <input type="number" id="staticPushup" required>
+                </div>
+                <div class="sub-group">
+                    <label for="singleLeg">٣- الثبات على رجل واحدة (يمين/يسار) (الدقائق):</label>
+                    <input type="number" id="singleLeg" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>تمارين الحركة بأوزان حرة:</label>
+                <div class="sub-group">
+                    <label for="benchPress">١- بار مسطح (الوزن بالكجم):</label>
+                    <input type="number" id="benchPress" required>
+                </div>
+                <div class="sub-group">
+                    <label for="squat">٢- السكوات (الوزن بالكجم):</label>
+                    <input type="number" id="squat" required>
+                </div>
+                <div class="sub-group">
+                    <label for="deadlift">٣- الديدلفت (الوزن بالكجم):</label>
+                    <input type="number" id="deadlift" required>
+                </div>
+                <div class="sub-group">
+                    <label for="shoulderPress">٤- بار كتف أمامي واقف (الوزن بالكجم):</label>
+                    <input type="number" id="shoulderPress" required>
+                </div>
+                <div class="sub-group">
+                    <label for="bicepCurl">٥- بار باي (الوزن بالكجم):</label>
+                    <input type="number" id="bicepCurl" required>
+                </div>
+            </div>
+
+            <!-- يمكنك إضافة باقي الأقسام هنا بنفس الطريقة -->
+            <button type="button" id="sendWhatsApp">إرسال عبر الواتساب</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
