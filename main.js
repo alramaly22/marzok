@@ -70,7 +70,7 @@ document.getElementById('sendWhatsApp').addEventListener('click', function() {
     `;
 
     // رقم الواتساب
-    const phoneNumber = "01064110742";
+    const phoneNumber = "+966592083324";
 
     // إنشاء رابط الواتساب
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
